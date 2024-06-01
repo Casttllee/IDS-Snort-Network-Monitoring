@@ -1,4 +1,4 @@
-# IDS-ZEEK-Network-Monitoring
+# IDS-Snort-Network-Monitoring
 
 ## Objective
 
