@@ -2,7 +2,7 @@
 
 ## Objective
 
-Installing Snort to check if a pcap might contain malicious activity.
+Installing Snort to check if a pcap might contain malicious activity. Read pcap and generate a basic signature.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
