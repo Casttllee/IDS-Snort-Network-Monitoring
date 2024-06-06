@@ -58,3 +58,12 @@ tar -xzvf snort3-3.2.1.0.tar.gz".
 
 *Ref 9*
 ![ipa](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/e94b0445-03c9-427d-b238-258461361edd)
+  Continuing with I had to make sure that both generic and large receive offloads were turned off on my network cards. This can affect packet inspection as well as analysis. This screenshot shows the command "ip a" which shows the network adapter name needed to continue.
+
+*Ref 10*
+![ethtool2](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/908c5ab0-0c95-4763-af50-17d94d767020)
+  Proceeding with I turned off the receive-offload via a service so the next time snort reboots, it will turn off automatically. I created the service by using ethtool. This sceenshot shows the input into the ethtool witht he correct network aapter, creating the service.
+
+*Ref 11*
+![receive-offload complete](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/4a96aa2b-350f-441f-878c-a301724c4205)
+
