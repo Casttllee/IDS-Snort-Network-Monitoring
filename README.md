@@ -66,4 +66,16 @@ tar -xzvf snort3-3.2.1.0.tar.gz".
 
 *Ref 11*
 ![receive-offload complete](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/4a96aa2b-350f-441f-878c-a301724c4205)
+  Following this I enabled and started the service by typing "sudo systemctl enable ethtool". This screenshot shows the receive offload as off for both.
 
+*Ref 12*
+![ICMPrulecreation](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/daea6379-4110-4cfd-97f1-56af501bbaa3)
+  In the following stage I created a custom rule for snort to detect ICMP traffic. I started this by creating a file with an alert written into it which was pointed to any address and any port. I also created a message to be outputted as well as created a signature.
+
+*Ref 13*
+![ICMPruleconfigured](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/69ff788b-b4ce-4e64-b8f5-5ffbfba03004)
+  I then tested the new rule by running snort and making sure the rule did not generate any errors. I did this by typing in sudo -c and pointting it to the configuration file then typing -R and point that to the rules file. This screenshot shows snort successfully validated the configuration with 0 warnings.
+
+*Ref 14*
+![ping](https://github.com/Casttllee/IDS-Snort-Network-Monitoring/assets/137667912/3bba1ca6-6921-4e43-9705-e6f4b48e4cad)
+  Next I ran snort 
